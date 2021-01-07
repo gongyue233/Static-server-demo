@@ -31,7 +31,8 @@ var server = http.createServer(function(request, response){
       '.css':'text/css',
       '.js':'text/javascript',
       '.png':'image/png',
-      '.jpg':'image/jpeg'
+      '.jpg':'image/jpeg',
+      '.json':'text/json'
     }
     response.setHeader('Content-Type', `${fileTypes[suffix] || 'text/html'};charset=utf-8`)        
     let content;
